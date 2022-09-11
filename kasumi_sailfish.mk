@@ -1,9 +1,13 @@
 # Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Inherit some common Kasumi stuff.
 $(call inherit-product, vendor/kasumi/config/common_full_phone.mk)
+
+# GApps
+TARGET_GAPPS_ARCH := arm64
 
 # Inherit device configuration
 $(call inherit-product, device/google/marlin/aosp_sailfish.mk)
